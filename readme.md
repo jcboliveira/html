@@ -29,11 +29,14 @@ Permitir corre o site fora do diretório usual /var/www/html
 
 2 - sudo vi /etc/apache2/mods-enabled/phpxx.conf em que xx é a versão do PHP (neste momento 8.1 Comentar as útimas 5 linhas 
 
+```console
 # <IfModule mod_userdir.c>
 #     <Directory /home/*/public_html>
 #        php_admin_flag engine Off
 #     </Directory>
 # </IfModule>
+```
+
 
 
 reiniciar o apache 
