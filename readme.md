@@ -18,8 +18,23 @@ Instalar o sqlite3
 Instalar o PHP + PHP para apache + PHP para sqlite3
 1 - sudo apt install php libapache2-mod-php php-sqlite3
 
+Permitir corre o site fora do diretório usual /var/www/html
+1 - sudo a2enmod userdir
+2 - sudo vi /etc/apache2/mods-enabled/phpxx.conf em que xx é a versão do PHP (neste momento 8.1 Comentar as útimas 5 linhas 
+# <IfModule mod_userdir.c>
+#     <Directory /home/*/public_html>
+#        php_admin_flag engine Off
+#     </Directory>
+# </IfModule>
+
+
 reiniciar o apache 
 1 - sudo service apache2 restart
+
+Aceder ao site por:
+http://localhost/~user/ em que user é o vosso utilizador
+
+Mais informação no documento de apoio que está no moodle
 
 NOTA: Nunca se deve realizar assim grande erro de permissões mas facilita o trabalho
 Mudar as permissões dos diretórios
