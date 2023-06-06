@@ -1,7 +1,9 @@
 Exemplo básico
 
 init_db.php: Cria tabela em sqlite3 e insere valores
+
 ler_db.php: ler valores na dB criada por init_db.php com valores inseridos por index.php
+
 index.php: inserir valores na Bd
 
 
@@ -44,6 +46,18 @@ reiniciar o apache
 1 - sudo service apache2 restart
 
 Aceder ao site por:
-http://localhost/~user em que user é o vosso utilizador
+http://localhost/~user em que user é o vosso utilizador no caso do exemplo:
+
+Criar a base de dados:
+
+http://localhost/~user/init_db.php
+
+Inserir valores na base de dados
+
+http://localhost/~user/index.php
+
+Ler valores da base de dados
+
+http://localhost/~user/ler_db.php
 
 Mais informação no documento de apoio que está no moodle
