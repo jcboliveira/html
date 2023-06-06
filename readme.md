@@ -39,7 +39,8 @@ Permitir corre o site fora do diretório usual /var/www/html
 # </IfModule>
 ```
 
-
+3 - mkdir ~/public_html
+4 - chmod 777 ~/public_html
 
 reiniciar o apache 
 
