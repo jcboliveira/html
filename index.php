@@ -17,11 +17,12 @@
     <?php
     // 
     $db = new SQLite3('test.db');
-     
+
     $marca = $_GET["marca"];
-    $preco = $_GET["preco"];
+    $preco = (int)$_GET["preco"];
     if ($marca != null) {
-        $db->exec("INSERT INTO Viaturas(marca, preco) VALUES($marca, $preco)");
+        $sql = "INSERT INTO Viaturas(marca, preco) VALUES('$marca', '$preco')";
+        $db->exec($sql);
     }
     unset($db);
     ?>
