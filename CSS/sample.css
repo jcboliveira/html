@@ -1,18 +1,3 @@
-img {
-   display: block;
-   height: 100px;
-   width: 300px;
-   margin: auto;
- }
- 
- p {
-   text-align: center;
-   font-family: Garamond, serif;
-   font-size: 18px;
- }
- 
- 
- /*Start adding your CSS below!*/
  
  span {
    color: rgb(255, 0, 68);
